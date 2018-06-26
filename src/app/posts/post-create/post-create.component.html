@@ -1,0 +1,25 @@
+<!-- <textarea [value]="newPost"  rows="6" #postInput></textarea> -->
+<mat-card>
+<form>
+    <mat-form-field class="example-full-width">
+        <input 
+        matInput 
+        type="text" 
+        [(ngModel)]="enteredTitle" 
+        placeholder="Write your title">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <textarea 
+        matInput [(ngModel)]="enteredContent" 
+        placeholder="Write your content">
+      </textarea>
+      </mat-form-field>
+      <button (click)="onAddPost()" mat-raised-button color="accent">Save Post</button>
+
+</form>
+
+  
+</mat-card>
+<!-- <button (click)="onAddPost(postInput)">Save Post</button> -->
+
+
